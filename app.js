@@ -2,10 +2,10 @@ const http = require('http');
 
 const server = http.createServer((req, res) => {
   if (req.url === '/') {
-    res.write('Hello');
+    res.write('Bozo T. Clown');
     res.end();
   } else {
-    res.write('Hi');
+    res.write('Somewhere out there...');
     res.end();
   }
 });
