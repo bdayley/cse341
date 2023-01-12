@@ -1,9 +1,19 @@
 const express = require('express');
 const app = express();
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 8080
 const mongodb = require('./db/connect');
 
-app.use('/', require('./routes'));
+// app.use('/', require('./routes'));
+
+app
+  .use(express.json())
+  .use(express.urlencoded({ extended: true}))
+  .use((req, res, next) => {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    next();
+  })
+  .use('/', require('./routes'));
+
 
 mongodb.initDb((err, mongodb) => {
     if (err) {
@@ -15,6 +25,7 @@ mongodb.initDb((err, mongodb) => {
   });
 
 
-// app.listen(port, () => {
-//     console.log(`Running on port ${port}...`);
-// })
+  // TODO: 
+  // add env to Render
+  // get one contact with get request
+  // add routes for Render

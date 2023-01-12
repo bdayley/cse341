@@ -10,7 +10,7 @@ const initDb = callback => {
     console.log('Db is already initialized!');
     return callback(null, _db);
   }
-  MongoClient .connect(process.env.MONGODB_URL)
+  MongoClient.connect(process.env.MONGODB_URL)
     .then(client => {
       _db = client;
       callback(null, _db);
@@ -28,3 +28,5 @@ const getDb = () => {
 };
 
 module.exports = { initDb, getDb };
+
+// https://itexpertly.com/what-is-mongoclient-in-node-js/
