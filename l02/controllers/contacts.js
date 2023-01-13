@@ -10,7 +10,7 @@ const getAll = async (req, res, next) => {
 };
 
 const getSingle = async (req, res, next) => {
-  const userId = new ObjectId(req.params.id);
+  const userId = new ObjectId(req.params.id); // ObjectId turns it into a mongo id
   const result = await mongodb
     .getDb()
     .db("cse341")
@@ -21,5 +21,7 @@ const getSingle = async (req, res, next) => {
     res.status(200).json(lists[0]);
   });
 };
+
+// new function for post and delete
 
 module.exports = { getAll, getSingle };

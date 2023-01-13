@@ -26,6 +26,5 @@ mongodb.initDb((err, mongodb) => {
 
 
   // TODO: 
-  // add env to Render
-  // get one contact with get request
   // add routes for Render
+  // test those requests

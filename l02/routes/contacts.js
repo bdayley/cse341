@@ -7,6 +7,9 @@ router.get('/', contactsController.getAll); // allow the router to access that f
 
 router.get('/:id', contactsController.getSingle);
 
+// router.post
+// router.delete
+
 module.exports = router;
 
 
