@@ -7,9 +7,15 @@ router.get('/', contactsController.getAll); // allow the router to access that f
 
 router.get('/:id', contactsController.getSingle);
 
-// router.post
-// router.put
+// router.post (create new contact)
+router.post('/', contactsController.addContact);
+
+// router.put (update)
+router.put('/:id', contactsController.updateContact);
+
 // router.delete
+router.delete('/:id', contactsController.deleteContact);
+
 
 module.exports = router;
 

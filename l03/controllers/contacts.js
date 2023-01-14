@@ -18,6 +18,16 @@ const getSingle = async (req, res, next) => {
   });
 };
 
-// new function for post, put and delete
+/*
+Create a POST route for creating new contacts that returns the ID of the new contact and a 201 status
+Create a PUT route for updating a contact that returns a 204 status
+Create a DELETE route for deleting a contact that returns a 200 status
+*/
+// new functions for put, post, and delete
+const addContact = async (req, res, next) => {
+  const result = await mongodb.getDb().db("cse341").collection('contacts').insertOne(req.body); 
+  //result.then
+  // status and message?
+}
 
 module.exports = { getAll, getSingle };

@@ -1,0 +1,24 @@
+// Localhost
+Get http://localhost:8080/contacts
+
+### 
+Get http://localhost:8080/contacts/63bfb314847b9d74677578c7
+
+###
+Get http://localhost:8080/contacts/63bfb334847b9d746775b24a
+
+###
+Get http://localhost:8080/contacts/63bfb342847b9d746775d464
+
+###
+// Deploy
+Get http://cse341-dayley.onrender.com/contacts
+
+###
+Get http://cse341-dayley.onrender.com/contacts/63bfb314847b9d74677578c7
+
+###
+Get http://cse341-dayley.onrender.com/contacts/63bfb334847b9d746775b24a
+
+###
+Get http://cse341-dayley.onrender.com/contacts/63bfb342847b9d746775d464
