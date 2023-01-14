@@ -10,10 +10,10 @@ router.get('/:id', contactsController.getSingle);
 // router.post (create new contact)
 router.post('/', contactsController.addContact);
 
-// router.put (update)
-router.put('/:id', contactsController.updateContact);
+// update
+router.put('/:id', contactsController.updateContact); //(put updates all info, patch updates only what is given)
 
-// router.delete
+// delete
 router.delete('/:id', contactsController.deleteContact);
 
 

@@ -1,24 +1,69 @@
 // Localhost
-Get http://localhost:8080/contacts
+GET http://localhost:8080/contacts
 
 ### 
-Get http://localhost:8080/contacts/63bfb314847b9d74677578c7
+GET http://localhost:8080/contacts/63bfb314847b9d74677578c7
 
 ###
-Get http://localhost:8080/contacts/63bfb334847b9d746775b24a
+POST http://localhost:8080/contacts
+content-type: application/json
+
+{
+    "firstName": "Message",
+    "lastName": "Check",
+    "email": "what@foo.com",
+    "favoriteColor": "black",
+    "birthday": "1/19/23"
+}
 
 ###
-Get http://localhost:8080/contacts/63bfb342847b9d746775d464
+PUT http://localhost:8080/contacts/63c22f6810aed61e0e3ad13a
+content-type: application/json
+
+{
+    "firstName": "Try",
+    "lastName": "Again",
+    "email": "c@foo.com",
+    "favoriteColor": "gray",
+    "birthday": "7/3/20"
+}
 
 ###
+DELETE http://localhost:8080/contacts/63c25621c9912fa6ea3d3c96
+
+
+###
+
 // Deploy
-Get http://cse341-dayley.onrender.com/contacts
+GET http://cse341-dayley.onrender.com/contacts
 
 ###
-Get http://cse341-dayley.onrender.com/contacts/63bfb314847b9d74677578c7
+GET http://cse341-dayley.onrender.com/contacts/63bfb314847b9d74677578c7
 
 ###
-Get http://cse341-dayley.onrender.com/contacts/63bfb334847b9d746775b24a
+POST http://cse341-dayley.onrender.com/contacts
+content-type: application/json
+
+{
+    "firstName": "Message",
+    "lastName": "Check",
+    "email": "what@foo.com",
+    "favoriteColor": "black",
+    "birthday": "1/19/23"
+}
 
 ###
-Get http://cse341-dayley.onrender.com/contacts/63bfb342847b9d746775d464
+PUT http://cse341-dayley.onrender.com/contacts/63c22f6810aed61e0e3ad13a
+content-type: application/json
+
+{
+    "firstName": "Try",
+    "lastName": "Again",
+    "email": "c@foo.com",
+    "favoriteColor": "gray",
+    "birthday": "7/3/20"
+}
+
+###
+DELETE http://cse341-dayley.onrender.com/contacts/63c25621c9912fa6ea3d3c96
+
