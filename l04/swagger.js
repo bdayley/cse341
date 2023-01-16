@@ -5,8 +5,10 @@ const doc = {
     title: 'CSE 341 API',
     description: 'Contact API',
   },
-  host: 'localhost:8080', // change to render eventually?
-  schemes: ['http'],
+//   host: 'localhost:8080', // change to render eventually, also change in swagger-output
+//   schemes: ['http']
+  host: 'https://cse341-dayley.onrender.com', // don't start with https:// on the swagger-output.json
+  schemes: ['https'],
 };
 
 const outputFile = './swagger-output.json';

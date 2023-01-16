@@ -5,12 +5,19 @@
     "description": "Contact API",
     "version": "1.0.0"
   },
-  "host": "localhost:8080",
+  "host": "cse341-dayley.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http"
+    "https"
   ],
   "paths": {
+    "/api-docs": {
+      "get": {
+        "description": "",
+        "parameters": [],
+        "responses": {}
+      }
+    },
     "/contacts/": {
       "get": {
         "description": "",
