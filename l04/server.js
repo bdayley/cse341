@@ -3,8 +3,6 @@ const app = express();
 const port = process.env.PORT || 8080
 const mongodb = require('./db/connect');
 
-// app.use('/', require('./routes'));
-
 app
   .use(express.json()) // tells the app we'll be working with json
   .use(express.urlencoded({ extended: true})) // get the body; contacts controller req.params.id

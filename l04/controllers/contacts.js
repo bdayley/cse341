@@ -2,6 +2,7 @@ const mongodb = require('../db/connect');
 const ObjectId = require('mongodb').ObjectId;
 
 const getAll = async (req, res, next) => {  
+  // add swagger tags, summary, etc here?
   try {
     const result = await mongodb.getDb().db("cse341").collection('contacts').find();
     result.toArray().then((lists) => {
