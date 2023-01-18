@@ -1,0 +1,30 @@
+// LOCALHOST
+GET http://localhost:8080/boardgames
+
+###
+
+GET http://localhost:8080/boardgames/63c882e27d742df313ed65ea
+
+###
+
+POST http://localhost:8080/boardgames
+content-type: application/json
+
+{
+    "name": "Codenames: Duet",
+    "designer1": "Vlaada Chvatil",
+    "designer2": "Scot Eaton",
+    "publisher": "Czech Games",
+    "numberOfPlayers": "2",
+    "playingTime": "15-30",
+    "weight": "1.35",
+    "spielDesJahres": "no"
+}
+
+// PUT
+
+// DELETE
+
+
+
+// RENDER
