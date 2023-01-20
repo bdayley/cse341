@@ -6,7 +6,7 @@ const doc = {
         description: 'Boardgame API'
     },
     host: 'localhost:8080',
-    schemes: ['http']
+    schemes: ['http'],
     // host: 'https://cse341-dayley.onrender.com',
     // schemes: ['https']
 };

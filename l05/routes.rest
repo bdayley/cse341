@@ -3,7 +3,7 @@ GET http://localhost:8080/boardgames
 
 ###
 
-GET http://localhost:8080/boardgames/63c882e27d742df313ed65ea
+GET http://localhost:8080/boardgames/63c871c38b5efb58e4e8ce63
 
 ###
 
@@ -28,3 +28,23 @@ content-type: application/json
 
 
 // RENDER
+GET http://cse341-dayley.onrender.com/boardgames
+
+###
+GET http://cse341-dayley.onrender.com/boardgames/63c882e27d742df313ed65ea
+
+
+###
+POST http://cse341-dayley.onrender.com/boardgames
+content-type: application/json
+
+{
+    "name": "Fearsome Floors",
+    "designer1": "Friedemann Friese",
+    "designer2": "",
+    "publisher": "2F-Spiele",
+    "numberOfPlayers": "2.7",
+    "playingTime": "60",
+    "weight": "1.82",
+    "spielDesJahres": "no"
+}

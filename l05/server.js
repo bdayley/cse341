@@ -5,7 +5,7 @@ const mongodb = require('./db/connect');
 
 app
   .use(express.json()) // tells the app we'll be working with json
-  .use(express.urlencoded({ extended: true})) // get the body; contacts controller req.params.id
+  .use(express.urlencoded({ extended: true })) // get the body; contacts controller req.params.id
   .use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
     next();

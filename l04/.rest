@@ -2,7 +2,7 @@
 GET http://localhost:8080/contacts
 
 ### 
-GET http://localhost:8080/contacts/63bfb314847b9d74677578c7
+GET http://localhost:8080/contacts/63bfb334847b9d746775b24a
 
 ###
 POST http://localhost:8080/contacts
@@ -38,18 +38,19 @@ DELETE http://localhost:8080/contacts/63c2614e9d4933d422150e2d
 GET http://cse341-dayley.onrender.com/contacts
 
 ###
-GET http://cse341-dayley.onrender.com/contacts/63c25944d7c4cc013ff3f3d0
+GET http://cse341-dayley.onrender.com/contacts/63bfb334847b9d746775b24a
+
 
 ###
 POST http://cse341-dayley.onrender.com/contacts
 content-type: application/json
 
 {
-    "firstName": "Render",
-    "lastName": "Check",
-    "email": "what@foo.com",
-    "favoriteColor": "black",
-    "birthday": "1/19/23"
+    "firstName": "Lesson",
+    "lastName": "Four",
+    "email": "swagger@test.com",
+    "favoriteColor": "green",
+    "birthday": "1/16/23"
 }
 
 ###
