@@ -1,0 +1,164 @@
+{
+  "book1": {
+    "name": "The Ruins of Gorlan",
+    "author": "John Flanagan",
+    "inSeries": "yes",
+    "seriesTitle": "Ranger's Apprentice",
+    "seriesNumber": "01"  
+  },
+  "book2": {
+    "name": "The Burning Bridge",
+    "author": "John Flanagan",
+    "inSeries": "yes",
+    "seriesTitle": "Ranger's Apprentice",
+    "seriesNumber": "02"  
+  },
+  "book3": {
+    "name": "The Icebound Land",
+    "author": "John Flanagan",
+    "inSeries": "yes",
+    "seriesTitle": "Ranger's Apprentice",
+    "seriesNumber": "03"  
+  },
+  "book4": {
+    "name": "The Battle for Skandia",
+    "author": "John Flanagan",
+    "inSeries": "yes",
+    "seriesTitle": "Ranger's Apprentice",
+    "seriesNumber": "04"  
+  },
+  "book5": {
+    "name": "The Sorcerer of the North",
+    "author": "John Flanagan",
+    "inSeries": "yes",
+    "seriesTitle": "Ranger's Apprentice",
+    "seriesNumber": "05"  
+  },
+  "book6": {
+    "name": "The Siege of Macindaw",
+    "author": "John Flanagan",
+    "inSeries": "yes",
+    "seriesTitle": "Ranger's Apprentice",
+    "seriesNumber": "06"  
+  },
+  "book7": {
+    "name": "Erak's Ransom",
+    "author": "John Flanagan",
+    "inSeries": "yes",
+    "seriesTitle": "Ranger's Apprentice",
+    "seriesNumber": "07"  
+  },
+  "book8": {
+    "name": "The Kings of Clonmel",
+    "author": "John Flanagan",
+    "inSeries": "yes",
+    "seriesTitle": "Ranger's Apprentice",
+    "seriesNumber": "08"  
+  },
+  "book9": {
+    "name": "Halt's Peril",
+    "author": "John Flanagan",
+    "inSeries": "yes",
+    "seriesTitle": "Ranger's Apprentice",
+    "seriesNumber": "09"  
+  },
+  "book10": {
+    "name": "The Lost Stories",
+    "author": "John Flanagan",
+    "inSeries": "yes",
+    "seriesTitle": "Ranger's Apprentice",
+    "seriesNumber": "10"  
+  },
+  "book11": {
+    "name": "The Emperor of Nihon-Ja",
+    "author": "John Flanagan",
+    "inSeries": "yes",
+    "seriesTitle": "Ranger's Apprentice",
+    "seriesNumber": "11"  
+  },
+  "book12": {
+    "name": "A World Without Heroes",
+    "author": "Brandon Mull",
+    "inSeries": "yes",
+    "seriesTitle": "Beyonders",
+    "seriesNumber": "01"
+  },
+  "book13": {
+    "name": "Seeds of Rebellion",
+    "author": "Brandon Mull",
+    "inSeries": "yes",
+    "seriesTitle": "Beyonders",
+    "seriesNumber": "02"
+  },
+  "book14": {
+    "name": "Chasing the Prophecy",
+    "author": "Brandon Mull",
+    "inSeries": "yes",
+    "seriesTitle": "Beyonders",
+    "seriesNumber": "03"  
+  },
+  "book15": {
+    "name": "The Magician's Nephew",
+    "author": "C. S. Lewis",
+    "inSeries": "yes",
+    "seriesTitle": "The Chronicles of Narnia",
+    "seriesNumber": "01"  
+  },
+  "book16": {
+    "name": "The Lion, the Witch, and the Wardrobe",
+    "author": "C. S. Lewis",
+    "inSeries": "yes",
+    "seriesTitle": "The Chronicles of Narnia",
+    "seriesNumber": "02"  
+  },
+  "book17": {
+    "name": "The Horse and His Boy",
+    "author": "C. S. Lewis",
+    "inSeries": "yes",
+    "seriesTitle": "The Chronicles of Narnia",
+    "seriesNumber": "03"  
+  },
+  "book18": {
+    "name": "Prince Caspian: The Return to Narnia",
+    "author": "C. S. Lewis",
+    "inSeries": "yes",
+    "seriesTitle": "The Chronicles of Narnia",
+    "seriesNumber": "04"  
+  },
+  "book19": {
+    "name": "The Voyage of the Dawn Treader",
+    "author": "C. S. Lewis",
+    "inSeries": "yes",
+    "seriesTitle": "The Chronicles of Narnia",
+    "seriesNumber": "05"  
+  },
+  "book20": {
+    "name": "The Silver Chair",
+    "author": "C. S. Lewis",
+    "inSeries": "yes",
+    "seriesTitle": "The Chronicles of Narnia",
+    "seriesNumber": "06"  
+  },
+  "book21": {
+    "name": "The Last Battle",
+    "author": "C. S. Lewis",
+    "inSeries": "yes",
+    "seriesTitle": "The Chronicles of Narnia",
+    "seriesNumber": "07"  
+  },
+  "book22": {
+    "name": "Resistance",
+    "author": "Jennifer A. Nielsen",
+    "inSeries": "no",
+    "seriesTitle": "na",
+    "seriesNumber": "na"  
+  },
+  "book23": {
+    "name": "Westing Game",
+    "author": "Ellen Raskin",
+    "inSeries": "no",
+    "seriesTitle": "na",
+    "seriesNumber": "na"  
+  }
+
+}
