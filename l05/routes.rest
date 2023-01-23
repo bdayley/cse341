@@ -1,4 +1,6 @@
 // LOCALHOST
+
+// boardgame collection
 GET http://localhost:8080/boardgames
 
 ###
@@ -11,13 +13,13 @@ POST http://localhost:8080/boardgames
 content-type: application/json
 
 {
-    "name": "Codenames: Duet",
-    "designer1": "Vlaada Chvatil",
-    "designer2": "Scot Eaton",
-    "publisher": "Czech Games",
-    "numberOfPlayers": "2",
-    "playingTime": "15-30",
-    "weight": "1.35",
+    "name": "Fearsome Floors",
+    "designer1": "Friedemann Friese",
+    "designer2": "",
+    "publisher": "2F-Spiele",
+    "numberOfPlayers": "2.7",
+    "playingTime": "60",
+    "weight": "1.82",
     "spielDesJahres": "no"
 }
 
@@ -25,9 +27,36 @@ content-type: application/json
 
 // DELETE
 
+###
 
+// book collection
+GET http://localhost:8080/books
+
+###
+
+GET http://localhost:8080/books/63cec3b08b5efb58e491601d
+
+###
+
+POST http://localhost:8080/books
+content-type: application/json
+
+{
+    "name": "The Siege of Macindaw",
+    "author": "John Flanagan",
+    "inSeries": "yes",
+    "seriesTitle": "Ranger's Apprentice",
+    "seriesNumber": "06" 
+}
+
+// PUT
+
+// DELETE
+
+###
 
 // RENDER
+// boardgame collection
 GET http://cse341-dayley.onrender.com/boardgames
 
 ###
@@ -39,12 +68,33 @@ POST http://cse341-dayley.onrender.com/boardgames
 content-type: application/json
 
 {
-    "name": "Fearsome Floors",
-    "designer1": "Friedemann Friese",
+    "name": "Bandido",
+    "designer1": "Martin Nedergaard Andersen",
     "designer2": "",
-    "publisher": "2F-Spiele",
-    "numberOfPlayers": "2.7",
-    "playingTime": "60",
-    "weight": "1.82",
+    "publisher": "Levetiq",
+    "numberOfPlayers": "1-4",
+    "playingTime": "10-15",
+    "weight": "1.12",
     "spielDesJahres": "no"
+}
+
+###
+
+// book collection
+GET http://cse341-dayley.onrender.com/books
+
+###
+GET http://cse341-dayley.onrender.com/books/
+
+
+###
+POST http://cse341-dayley.onrender.com/books
+content-type: application/json
+
+{
+    "name": "The Kings of Clonmel",
+    "author": "John Flanagan",
+    "inSeries": "yes",
+    "seriesTitle": "Ranger's Apprentice",
+    "seriesNumber": "08"  
 }

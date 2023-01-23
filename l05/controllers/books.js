@@ -3,7 +3,7 @@ const ObjectId = require('mongodb').ObjectId;
 
 const getAll = async (req, res) => {
     try {
-        const result = await mongodb.getDb().db('cse341').collection('boardgames').find();
+        const result = await mongodb.getDb().db('cse341').collection('books').find();
         result.toArray().then((lists) => {
             res.setHeader('Content-Type', 'application/json');
             res.status(200).json(lists);
@@ -16,9 +16,9 @@ const getAll = async (req, res) => {
 const getOne = async (req, res) => {
     try {
         const userId = new ObjectId(req.params.id);
-        const result = await mongodb.getDb().db('cse341').collection('boardgames').find({ _id: userId });
+        const result = await mongodb.getDb().db('cse341').collection('books').find({ _id: userId });
         if (result === null) {
-            return res.status(404).json({ message: 'Cannot find boardgame' });
+            return res.status(404).json({ message: 'Cannot find book'});
         }
         result.toArray().then((lists) => {
             res.setHeader('Content-Type', 'application/json');
@@ -29,30 +29,26 @@ const getOne = async (req, res) => {
     }
 };
 
-const addGame = async (req, res) => {
-    const newGame = {
+const addBook = async (req, res) => {
+    const newBook = {
         name: req.body.name,
-        designer1: req.body.designer1,
-        designer2: req.body.designer2,
-        publisher: req.body.publisher,
-        numberOfPlayers: req.body.numberOfPlayers,
-        playingTime: req.body.playingTime,
-        weight: req.body.weight,
-        spielDesJahres: req.body.spielDesJahres
+        auther: req.body.author,
+        inSeries: req.body.inSeries,
+        seriesTitle: req.body.seriesTitle,
+        seriesNumber: req.body.seriesNumber
     }
     try {
-        const result = await mongodb.getDb().db('cse341').collection('boardgames').insertOne(newGame);
-        res.status(201).json(result)
+        const result = await mongodb.getDb().db('cse341').collection('books').insertOne(newBook);
+        res.status(201).json(result);
     } catch (err) {
         res.status(400).json({ message: err.message });
     }
 };
 
-// add updateGame, deleteGame
+// add updateBook, deleteBook
 
-
-module.exports = {
+module.exports ={
     getAll,
     getOne,
-    addGame
+    addBook
 }

@@ -3,7 +3,7 @@ const swaggerAutogen = require('swagger-autogen')();
 const doc = {
     info : {
         title: 'CSE 341 API Project 2',
-        description: 'Boardgame API'
+        description: 'Project 2'
     },
     host: 'localhost:8080',
     schemes: ['http'],
