@@ -5,10 +5,10 @@ const doc = {
         title: 'CSE 341 API Project 2',
         description: 'Project 2'
     },
-    host: 'localhost:8080',
-    schemes: ['http'],
-    // host: 'https://cse341-dayley.onrender.com',
-    // schemes: ['https']
+    // host: 'localhost:8080',
+    // schemes: ['http'],
+    host: 'https://cse341-dayley-project2.onrender.com',
+    schemes: ['https']
 };
 
 const outputFile = './swagger-output.json';

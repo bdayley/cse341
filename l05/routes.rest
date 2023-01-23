@@ -57,14 +57,14 @@ content-type: application/json
 
 // RENDER
 // boardgame collection
-GET http://cse341-dayley.onrender.com/boardgames
+GET http://cse341-dayley-project2.onrender.com/boardgames
 
 ###
-GET http://cse341-dayley.onrender.com/boardgames/63c882e27d742df313ed65ea
+GET http://cse341-dayley-project2.onrender.com/boardgames/63ced3ce2d646899b48d0be2
 
 
 ###
-POST http://cse341-dayley.onrender.com/boardgames
+POST http://cse341-dayley-project2.onrender.com/boardgames
 content-type: application/json
 
 {
@@ -81,14 +81,14 @@ content-type: application/json
 ###
 
 // book collection
-GET http://cse341-dayley.onrender.com/books
+GET http://cse341-dayley-project2.onrender.com/books
 
 ###
-GET http://cse341-dayley.onrender.com/books/
+GET http://cse341-dayley-project2.onrender.com/books/63ced3f32d646899b48d0be3
 
 
 ###
-POST http://cse341-dayley.onrender.com/books
+POST http://cse341-dayley-project2.onrender.com/books
 content-type: application/json
 
 {

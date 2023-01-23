@@ -90,8 +90,8 @@
         "spielDesJahres": "no"
     },    
     "game10" : {
-        "name": "",
-        "designer1": "Jungle Ascent",
+        "name": "Jungle Ascent",
+        "designer1": "Brian Johrman",
         "designer2": "",
         "publisher": "5th Street Games",
         "numberOfPlayers": "2-4",
