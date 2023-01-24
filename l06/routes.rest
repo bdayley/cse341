@@ -5,7 +5,7 @@ GET http://localhost:8080/boardgames
 
 ###
 
-GET http://localhost:8080/boardgames/63c871c38b5efb58e4e8ce63
+GET http://localhost:8080/boardgames/63d04c63d47ffa5c9ffeffdd
 
 ###
 
@@ -17,18 +17,18 @@ content-type: application/json
     "designer1": "Friedemann Friese",
     "designer2": "",
     "publisher": "2F-Spiele",
-    "numberOfPlayers": "2.7",
+    "numberOfPlayers": "2-7",
     "playingTime": "60",
     "weight": "1.82",
     "spielDesJahres": "no"
 }
 
 ###
-PUT http://localhost:8080/boardgames/63c871ed8b5efb58e4e926a4
+PUT http://localhost:8080/boardgames/63d04da9f91173056840e436
 content-type: application/json
 
 {
-    "name": "Wingspan",
+    "name": "Wingspan 2",
     "designer1": "Elizabeth Hargrave",
     "designer2": "",
     "publisher": "Stonemaier Games",
@@ -39,7 +39,7 @@ content-type: application/json
 }
 
 ###
-DELETE http://localhost:8080/boardgames/63c871ed8b5efb58e4e926a4
+DELETE http://localhost:8080/boardgames/63d0593290fcd472930256e0
 
 ###
 
@@ -64,7 +64,7 @@ content-type: application/json
 }
 
 ###
-PUT http://localhost:8080/books/63cecc824f7817b23985cad8
+PUT http://localhost:8080/books/63d05a6a324b684b19b9820b
 content-type: application/json
 
 {
@@ -77,11 +77,14 @@ content-type: application/json
 
 ###
 
-DELETE http://localhost:8080/books/63cecc824f7817b23985cad8
+DELETE http://localhost:8080/books/63d05a6a324b684b19b9820b
 
 ###
 
+//
 // RENDER
+//
+
 // boardgame collection
 GET http://cse341-dayley-project2.onrender.com/boardgames
 

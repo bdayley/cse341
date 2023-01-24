@@ -14,6 +14,9 @@ const getAll = async (req, res) => {
 };
 
 const getOne = async (req, res) => {
+    if (!ObjectId.isValid(req.params.id)) {
+        res.status(400).json('Must use a valid id to find a book.')
+    }
     try {
         const userId = new ObjectId(req.params.id);
         const result = await mongodb.getDb().db('cse341').collection('books').find({ _id: userId });
@@ -46,6 +49,9 @@ const addBook = async (req, res) => {
 };
 
 const updateBook = async (req, res) => {
+    if (!ObjectId.isValid(req.params.id)) {
+        res.status(400).json('Must use a valid id to update a book.')
+    }
     const userId = new ObjectId(req.params.id);
     const book = {
         name: req.body.name,
@@ -55,18 +61,21 @@ const updateBook = async (req, res) => {
         seriesNumber: req.body.seriesNumber
     };
     try {
-        const result = await mongodb.getDb().db('cse341').collections('books').replaceOne({ _id: userId }, book);
-        res.status(204).json(result);
+        const result = await mongodb.getDb().db('cse341').collection('books').replaceOne({ _id: userId }, book);
+        res.status(200).json([result]);
     } catch (err) {
         res.status(400).json({ message: err.message });
     }
 };
 
 const deleteBook = async (req, res) => {
+    if (!ObjectId.isValid(req.params.id)) {
+        res.status(400).json('Must use a valid id to delete a book.')
+    }
     const userId = new ObjectId(req.params.id);
     try {
         const result = await mongodb.getDb().db('cse341').collection('books').deleteOne({ _id: userId});
-        res.status(200).json([result]);
+        res.status(204).json([result]);
     } catch (err) {
         res.status(500).json({ message: err.message });
     }

@@ -12,6 +12,9 @@ app
   })
   .use('/', require('./routes'));
 
+process.on('uncaughtException', (err, origin) => {
+  console.log(process.stderr.fd, `Caught exception: ${err}/n` + `Exception origin: ${origin}`);
+}); // this could be written to a file, rather than the log
 
 mongodb.initDb((err, mongodb) => {
     if (err) {
