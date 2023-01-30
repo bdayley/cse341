@@ -7,7 +7,7 @@ const saveGame = (req, res, next) => {
         designer2: 'string',
         publisher: 'required|string',
         numberOfPlayers: 'required|string',
-        playingTime: 'integer',
+        playingTime: 'string',
         weight: 'numeric',
         spielDesJahres: 'string'
     };

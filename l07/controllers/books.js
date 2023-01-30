@@ -35,7 +35,7 @@ const getOne = async (req, res) => {
 const addBook = async (req, res) => {
     const newBook = {
         name: req.body.name,
-        auther: req.body.author,
+        author: req.body.author,
         inSeries: req.body.inSeries,
         seriesTitle: req.body.seriesTitle,
         seriesNumber: req.body.seriesNumber
