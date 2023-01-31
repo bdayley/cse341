@@ -1,0 +1,161 @@
+// LOCALHOST
+
+// boardgame collection
+GET http://localhost:8080/boardgames
+
+###
+
+GET http://localhost:8080/boardgames/63d7d6a528456c637942eb8c
+
+###
+
+POST http://localhost:8080/boardgames
+content-type: application/json
+
+{
+    "name": "Dominion",
+    "designer1": "Donald X. Vaccarino",
+    "designer2": "", 
+    "publisher": "Rio Grande GAmes",
+    "numberOfPlayers": "2-3",
+    "playingTime": "30",
+    "weight": "2.35",
+    "spielDesJahres": "no"
+}
+
+###
+PUT http://localhost:8080/boardgames/63d7d6a528456c637942eb8c
+content-type: application/json
+
+{
+    "name": "Invictus",
+    "designer1": "Steve Ririe",
+    "designer2": "Matt Ririe",
+    "publisher": "Self-Published",
+    "numberOfPlayers": "2-6",
+    "playingTime": "60-90",
+    "weight": "2.20",
+    "spielDesJahres": "no"
+}
+
+###
+DELETE http://localhost:8080/boardgames/63d0593290fcd472930256e0
+
+###
+
+// book collection
+GET http://localhost:8080/books
+
+###
+
+GET http://localhost:8080/books/63d7d731c0e5cf072f8e37f3
+
+###
+
+POST http://localhost:8080/books
+content-type: application/json
+
+{
+    "name": "The Siege of Macindaw",
+    "author": "John Flanagan",
+    "inSeries": "yes",
+    "seriesTitle": "Ranger's Apprentice",
+    "seriesNumber": "06" 
+}
+
+###
+PUT http://localhost:8080/books/63d7d731c0e5cf072f8e37f3
+content-type: application/json
+
+{
+    "name": "A World Without Heroes",
+    "author": "Brandon Mull",
+    "inSeries": "yes",
+    "seriesTitle": "Beyonders",
+    "seriesNumber": "01" 
+}
+
+###
+
+DELETE http://localhost:8080/books/63d7d880c0e5cf072f8e37f5
+
+###
+
+//
+// RENDER
+//
+
+// boardgame collection
+GET http://cse341-dayley-project2.onrender.com/boardgames
+
+###
+GET http://cse341-dayley-project2.onrender.com/boardgames/63ced3ce2d646899b48d0be2
+
+
+###
+POST http://cse341-dayley-project2.onrender.com/boardgames
+content-type: application/json
+
+{
+    "name": "Bandido",
+    "designer1": "Martin Nedergaard Andersen",
+    "designer2": "",
+    "publisher": "Levetiq",
+    "numberOfPlayers": "1-4",
+    "playingTime": "10-15",
+    "weight": "1.12",
+    "spielDesJahres": "no"
+}
+
+###
+PUT http://cse341-dayley-project2.onrender.com/boardgames/id
+content-type: application/json
+
+{
+    "name": "Bandido",
+    "designer1": "Martin Nedergaard Andersen",
+    "designer2": "",
+    "publisher": "Levetiq",
+    "numberOfPlayers": "1-4",
+    "playingTime": "10-15",
+    "weight": "1.12",
+    "spielDesJahres": "no"
+}
+
+###
+DELETE http://cse341-dayley-project2.onrender.com/boardgames/id
+
+###
+
+// book collection
+GET http://cse341-dayley-project2.onrender.com/books
+
+###
+GET http://cse341-dayley-project2.onrender.com/books/63ced3f32d646899b48d0be3
+
+###
+POST http://cse341-dayley-project2.onrender.com/books
+content-type: application/json
+
+{
+    "name": "The Kings of Clonmel",
+    "author": "John Flanagan",
+    "inSeries": "yes",
+    "seriesTitle": "Ranger's Apprentice",
+    "seriesNumber": "08"  
+}
+
+###
+PUT http://cse341-dayley-project2.onrender.com/books/id
+content-type: application/json
+
+{
+    "name": "The Kings of Clonmel",
+    "author": "John Flanagan",
+    "inSeries": "yes",
+    "seriesTitle": "Ranger's Apprentice",
+    "seriesNumber": "08"  
+}
+
+###
+DELETE http://cse341-dayley-project2.onrender.com/boardgames/id
